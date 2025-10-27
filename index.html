@@ -8,40 +8,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 
     <style>
+        /* Global CSS variables for whole site */
         :root {
-            --bg-primary: #404040;
-            --bg-secondary: #333333;
-            --bg-card: #2a2a2a;
-            --text-primary: #ffffff;
-            --text-secondary: #e0e0e0;
-            --accent-teal: #24E6FF;
-            --accent-purple: #8B3AB4;
-            --accent-orange: #FCAB45;
-            --gradient-gold: #FFD700;
-            --gradient-orange: #FF6B35;
-            --gradient-pink: #FF006E;
+           --bg-primary: #404040;      /* Main dark background for the body and big sections */
+           --bg-secondary: #333333;    /* Slightly lighter background for headers or blocks */
+           --bg-card: #2a2a2a;         /* Card backgrounds or inner containers */
+           --text-primary: #ffffff;    /* Main white text everywhere */
+           --text-secondary: #e0e0e0;  /* Lighter grey text for sub-headings or details */
+            --accent-teal: #24E6FF;     /* Bright teal color for highlight, buttons, or links */
+            --accent-purple: #8B3AB4;   /* Bold purple accent, use for key areas or borders */
+            --accent-orange: #FCAB45;   /* Warm orange, good for warning or feature highlight */
+            --gradient-gold: #FFD700;   /* Gold color, used in gradients or shiny effects */
+             --gradient-orange: #FF6B35; /* Orange gradient part, makes things pop */
+           --gradient-pink: #FF006E;   /* Pink gradient for color blending, buttons, backgrounds */
         }
 
         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+           margin: 0;        /* Removes all default spacing outside elements (like body, h1, p, etc.) */
+           padding: 0;       /* Removes all default inner spacing inside elements */
+           box-sizing: border-box; /* Includes padding and border in the width/height - makes sizing layouts easier */
+
         }
 
         html {
-            scroll-behavior: smooth;
-            
-        }
+            scroll-behavior: smooth; /* Makes the page scroll smoothly when you click anchor links */
 
-        body {
-            padding-top: 100px;
-            background: #404040;
-            color: #fff;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            line-height: 1.8;
-            overflow-x: hidden;
-        }
+            
+     }
+
+       body {
+  padding-top: 100px;        /* Adds space at the top, usually to avoid overlapping fixed headers */
+  background: #404040;       /* Dark gray background color for the whole page */
+  color: #fff;               /* White color for text */
+  font-family: 'Poppins', sans-serif; /* Sets the font style for the text */
+  margin: 0;                 /* Removes default margin around the page */
+  line-height: 1.8;          /* Sets spacing between lines of text for readability */
+  overflow-x: hidden;        /* Prevents horizontal scroll to keep page neat */
+}
 
         /* Loading Screen - EXACT MATCH TO DESIGN */
         #loading-screen {
@@ -135,7 +138,7 @@
 
         nav ul {
             display: flex;
-            gap: px;
+            gap: 48 px;
             list-style: none;
             margin: 0;
             padding: 0;
@@ -774,6 +777,7 @@
             .question { font-size: 1.3rem; }
             .answer-option { font-size: 1rem; padding: 15px 20px; }
         }
+        
     </style>
 <style>
             @keyframes confetti-fall {
@@ -1984,6 +1988,7 @@
 
 
 /*# sourceMappingURL=../sourceMap/chrome/css/interactive_balloon.css.map*/</style></template></div></body></html>
+
 
 
 
