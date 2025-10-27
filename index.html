@@ -774,6 +774,40 @@
             .question { font-size: 1.3rem; }
             .answer-option { font-size: 1rem; padding: 15px 20px; }
         }
+        /* Responsive Navbar */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    background: #222;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    display: none;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+/* Desktop default */
+.menu-toggle {
+  display: none;
+}
+
     </style>
 <style>
             @keyframes confetti-fall {
@@ -1984,3 +2018,4 @@
 .mc-interactive-balloon{position:absolute;right:-50px;bottom:8px;box-shadow:rgba(0,0,0,.12) 0px 0px 10px;height:40px;width:40px;background:#1671ee;border-radius:20px;display:flex;justify-content:center;align-items:center}
 
 /*# sourceMappingURL=../sourceMap/chrome/css/interactive_balloon.css.map*/</style></template></div></body></html>
+
