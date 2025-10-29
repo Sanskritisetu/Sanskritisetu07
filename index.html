@@ -5,6 +5,60 @@
  <title>SanskritiSetu - India's Ancient Code for Modern Well-being</title>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+     /* Container for the Google Translate widget */
+#google_translate_element {
+  position: fixed; /* Sticks to screen */
+  top: 12px;
+  right: 20px;
+  z-index: 2000;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Style the dropdown menu */
+#google_translate_element select {
+  background: #333;
+  color: #fff;
+  border: 2px solid #FFD700;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect */
+#google_translate_element select:hover {
+  background: #444;
+  border-color: #FF6B35;
+}
+
+/* Remove Google default styles for iframe, etc */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+/* Responsive style for mobile */
+@media (max-width: 600px) {
+  #google_translate_element {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  #google_translate_element select {
+    width: 90vw;
+    max-width: 280px;
+    font-size: 1.1rem;
+    padding: 10px 16px;
+  }
+}
+
         :root {
             --bg-primary: #404040;
             --bg-secondary: #333333;
@@ -2343,4 +2397,5 @@ function googleTranslateElementInit() {
 
 
 <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
+
 
